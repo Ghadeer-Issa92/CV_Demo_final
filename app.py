@@ -8,6 +8,8 @@ from collections import deque
 from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
+run_with_ngrok(app)
+
 
 IMAGE_HEIGHT, IMAGE_WIDTH = 64, 64
 
