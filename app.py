@@ -6,6 +6,8 @@ import cv2
 import numpy as np
 from collections import deque
 from tensorflow.keras.models import load_model
+from flask_ngrok import run_with_ngrok
+
 
 app = Flask(__name__)
 run_with_ngrok(app)
