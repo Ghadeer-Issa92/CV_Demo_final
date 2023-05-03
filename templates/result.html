@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Video Classification Result</title>
+  </head>
+  <body>
+    <h1>Video Classification Result</h1>
+    <div style="display: flex;">
+      <div>
+        <video controls autoplay width="640" height="480">
+          <source src="{{ url_for('static', filename=input_video) }}" type="video/mp4">
+        </video>
+        <p>Input Video</p>
+      </div>
+      <div>
+        <video controls autoplay width="640" height="480">
+          <source src="{{ url_for('static', filename=output_video) }}" type="video/mp4">
+        </video>
+        <p>Output Video</p>
+        <!-- {% if classes_list %}
+        <p>Predicted class: {{ classes_list[predicted_label] }}</p>
+        {% endif %} -->
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Video Classification Result</title>
+</head>
+<body>
+	<h1>Video Classification Result</h1>
+	<h2>Input Video</h2>
+	<video width="640" height="480" controls>
+		<source src="{{ url_for('static', filename=input_video) }}" type="video/mp4">
+	</video>
+	<h2>Output Video</h2>
+	<video width="640" height="480" controls>
+		<source src="{{ url_for('static', filename=output_video) }}" type="video/mp4">
+	</video>
+	<p>Class: {{ predicted_class }}</p>
+</body>
+</html> -->
